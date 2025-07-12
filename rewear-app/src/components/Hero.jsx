@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <section
@@ -15,10 +16,18 @@ const Hero = () => {
           Discover unique items and exchange what you no longer need with a vibrant community.
           Give your clothes a new life, sustainably.
         </p>
-        <div className="space-x-4">
-          <button className="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600">Start Swapping</button>
-          <button className="bg-white border border-gray-300 px-6 py-2 rounded hover:bg-gray-100">Browse Items</button>
-        </div>
+        <div className="flex justify-center gap-4 flex-wrap">
+          <Link to="/browse">
+            <button className="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg text-white font-semibold transition shadow">
+              Browse Items
+            </button>
+          </Link>
+          <Link to="/list">
+            <button className="bg-white text-green-700 border border-green-600 hover:bg-green-100 px-6 py-3 rounded-lg font-semibold transition shadow">
+              List an Item
+            </button>
+          </Link>
+      </div>
       </div>
     </section>
   );

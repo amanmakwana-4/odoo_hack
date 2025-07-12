@@ -10,8 +10,7 @@ const Navbar = () => {
       <div className="flex items-center space-x-2">
         <img src="/logo.png" alt="ReWear" className="h-8 w-8" />
         <Link to="/" className="text-xl font-bold text-green-700">ReWear</Link>
-        <Link to="/browse" className="ml-6 text-gray-700 hover:text-green-700">Browse</Link>
-        <Link to="/list" className="ml-4 text-gray-700 hover:text-green-700">List Item</Link>
+        
         <Link to="/dashboard" className="ml-4 text-gray-700 hover:text-green-700">Dashboard</Link>
       </div>
 
